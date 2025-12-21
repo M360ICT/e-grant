@@ -1,0 +1,218 @@
+/*
+ * Header Styles
+ * Contains: Header layout, logo, navigation, mobile menu
+ */
+
+/* ========== HEADER ========== */
+#header {
+    position: relative;
+    padding: 34px 40px 0;
+    width: 100%;
+    color: #fff;
+    background: #c30000 url(../images/bg-header.svg) no-repeat calc(100% - 20px) 0;
+    border-radius: 0 0 0 120px;
+    overflow: hidden;
+}
+
+#page-interview #header {
+    border-radius: 0 0 120px 0;
+    overflow: initial;
+}
+
+#header #logo {
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+}
+
+#header h1 {
+    font-size: 60px;
+}
+
+#header h1 span {
+    display: block;
+    font-size: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+}
+
+/* ========== DESKTOP HEADER ========== */
+@media screen and (min-width: 782px) {
+
+    #menu,
+    #sp-btns,
+    #sp-menu {
+        display: none;
+    }
+
+    #header #logo span {
+        display: block;
+        padding-top: 10px;
+    }
+
+    body:not(#page-interview) #header {
+        height: 547px;
+        overflow-x: hidden;
+    }
+
+    body:not(#page-interview) #header h1 {
+        position: absolute;
+        bottom: 98px;
+        left: calc((100vw - 1200px) / 2);
+    }
+
+    body:not(#page-interview) #header:before {
+        width: 594px;
+        bottom: -282px;
+        right: calc(((100% - 1200px) / 2) - 384px);
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 782px) and (max-width: 1260px) {
+    body:not(#page-interview) #header:before {
+        right: -354px;
+    }
+
+    body:not(#page-interview) #header h1 {
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    #header {
+        background-size: 80% auto;
+    }
+}
+
+/* ========== MOBILE HEADER ========== */
+@media screen and (max-width: 781px) {
+    body:not(#page-interview):before {
+        position: absolute;
+        width: 594px;
+        top: 282px;
+        background: #000;
+        right: 0;
+        z-index: 1;
+    }
+
+    #header {
+        padding: 11px 0 0;
+        min-height: 352px;
+        background: #c30000 url(../images/bg-header-2-sp.svg) no-repeat 100% 60px / 160px auto;
+        border-radius: 0 0 80px 0;
+    }
+
+    #page-interview #header {
+        height: auto;
+        background: #c30000 url(../images/bg-header-sp.svg) no-repeat 100% 0 / 24% auto;
+        border-radius: 0 0 80px 0;
+    }
+
+    #header #logo {
+        padding-left: 16px;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    #header #logo img {
+        width: 40px;
+        font-size: 13px;
+    }
+
+    #header h1 {
+        position: absolute;
+        bottom: 85px;
+        left: 30px;
+        font-size: 40px;
+    }
+
+    #header h1 span {
+        font-size: 14px;
+    }
+}
+
+/* ========== MOBILE MENU ========== */
+@media screen and (max-width: 781px) {
+    #menu {
+        position: fixed;
+        top: 8px;
+        right: 13px;
+        width: 46px;
+        height: 46px;
+        cursor: pointer;
+        z-index: 900;
+        border-radius: 50%;
+        background: #fff;
+    }
+
+    #menu:before,
+    #menu:after {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 13px;
+        width: 18px;
+        height: 1px;
+        content: "";
+        background: #c30000;
+        transition: 0.5s ease-in-out;
+    }
+
+    #menu:after {
+        top: 26px;
+        width: 18px;
+    }
+
+    #menu.is-open span {
+        display: none;
+    }
+
+    #menu.is-open:before {
+        transform: rotate(45deg);
+        top: 22px;
+    }
+
+    #menu.is-open:after {
+        transform: rotate(-45deg);
+        top: 22px;
+    }
+
+    .js-scroll-prevent {
+        overflow: hidden;
+    }
+
+    #panel {
+        width: 100%;
+        height: 100vh;
+        padding: 40px 20px 80px;
+        opacity: 0;
+        background: #c30000;
+        overflow: scroll;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 200;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        pointer-events: none;
+        text-align: left;
+    }
+
+    #panel.is-open {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    #panel li {
+        margin-top: 20px;
+    }
+
+    #panel ul:last-of-type {
+        padding-bottom: 40px;
+    }
+}

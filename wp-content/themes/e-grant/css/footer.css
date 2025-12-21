@@ -1,0 +1,130 @@
+/*
+ * Footer Styles
+ * Contains: Footer layout, navigation, social links, copyright
+ */
+
+/* ========== FOOTER ========== */
+#footer {
+    position: relative;
+    padding: 76px 0 32px;
+    color: #fff;
+    background: #c30000;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer a.btn-entry {
+    display: inline-block;
+    width: 140px;
+    font-size: 22px;
+    line-height: 54px;
+    text-align: center;
+    color: #c30000;
+    background: #fff;
+    border-radius: 100vh;
+}
+
+.footer-lower .sns a {
+    padding-right: 28px;
+}
+
+#copyright {
+    font-size: 13px;
+}
+
+#to-top {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    right: 30px;
+    top: -102px;
+    background: #c30000 url(../images/arrow-top.svg) no-repeat 50% 20px;
+    z-index: 10;
+}
+
+#to-top:hover {
+    opacity: 1;
+}
+
+/* ========== DESKTOP FOOTER ========== */
+@media screen and (min-width: 782px) {
+
+    .footer-upper,
+    .footer-upper>div,
+    .footer-lower {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 100px;
+    }
+
+    .footer-upper ul a {
+        display: block;
+    }
+
+    .footer-upper ul ul {
+        margin-top: 10px;
+    }
+
+    .footer-upper li {
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .footer-upper li li {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .footer-lower {
+        padding-top: 7px;
+    }
+
+    #footer a.btn-entry.sp-show {
+        display: none;
+    }
+}
+
+/* ========== MOBILE FOOTER ========== */
+@media screen and (max-width: 781px) {
+    #footer {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .footer-upper img {
+        width: 82px;
+    }
+
+    .footer-upper {
+        padding-bottom: 40px;
+    }
+
+    .footer-lower {
+        padding: 30px 0 45px;
+    }
+
+    .footer-lower .sns {
+        padding-bottom: 32px;
+    }
+
+    .footer-lower .sns a {
+        padding: 0 14px;
+    }
+
+    #footer-logo {
+        position: relative;
+        z-index: 11;
+    }
+
+    #to-top {
+        top: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

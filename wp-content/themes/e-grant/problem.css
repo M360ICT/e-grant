@@ -1,0 +1,175 @@
+.problem-section {
+  position: relative;
+  padding: 80px 180px;
+  overflow: hidden;
+}
+.problem-section::after {
+  position: absolute;
+  top: 60px;
+  left: 800px;
+  content: "";
+  width: 260px;
+  aspect-ratio: 1 / 1;
+  background: url(/wp-content/themes/e-grant/images/home/problem-bg.png)
+    no-repeat center / cover;
+  opacity: 0.5; /* ✅ proper opacity */
+  z-index: 7;
+  pointer-events: none;
+}
+/* Big background character */
+
+.content-wrapper {
+  position: relative;
+  display: flex;
+  gap: clamp(24px, 4vw, 60px);
+  align-items: center;
+  z-index: 1;
+  font-family: "Gothic UI";
+}
+
+/* Image */
+.image-wrapper {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper img {
+  width: 70%;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+/* Text */
+.text-wrapper {
+  width: 50%;
+}
+
+.text-wrapper h2 {
+  color: #c40000;
+  font-size: clamp(24px, 3vw, 36px);
+  margin-bottom: 16px;
+  font-size: 60;
+}
+
+.text-wrapper h2 span {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  font-size: 112px;
+}
+
+.text-wrapper p {
+  font-size: clamp(14px, 1.4vw, 20px);
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.text-wrapper .highlight {
+  margin-bottom: 18px;
+}
+
+.text-wrapper .emphasis {
+  color: #c40000;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.text-wrapper .final {
+  color: #c40000;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* ✅ Responsive */
+@media (max-width: 900px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .bg-text {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    opacity: 0.15;
+  }
+
+  .text-wrapper {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 781px) {
+  .problem-section {
+    position: relative;
+    padding: 10px 5px;
+    overflow: hidden;
+  }
+  .problem-section::after {
+    position: absolute;
+    top: 60px;
+    left: 220px;
+    content: "";
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png)
+      no-repeat center / cover;
+    opacity: 0.9; /* ✅ proper opacity */
+    z-index: 7;
+    pointer-events: none;
+  }
+  .image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 24px;
+    object-fit: cover;
+  }
+
+  /* Text */
+  .text-wrapper {
+    width: 100%;
+    padding: 5px 20px;
+    text-align: start;
+  }
+  .text-wrapper h2 {
+    color: #c40000;
+    font-size: clamp(24px, 3vw, 36px);
+    margin-bottom: 16px;
+    font-size: 60;
+  }
+
+  .text-wrapper h2 span {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 800;
+    font-size: 42px;
+  }
+
+  .text-wrapper p {
+    font-size: clamp(14px, 1.4vw, 20px);
+    line-height: 1.8;
+    margin-bottom: 14px;
+  }
+
+  .text-wrapper .highlight {
+    margin-bottom: 18px;
+  }
+
+  .text-wrapper .emphasis {
+    color: #c40000;
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .text-wrapper .final {
+    color: #c40000;
+    font-weight: bold;
+    font-size: 15px;
+  }
+}

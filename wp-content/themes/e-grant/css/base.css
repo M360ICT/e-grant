@@ -1,0 +1,221 @@
+@charset "utf-8";
+/*
+ * Base Styles - Reset, Typography, Common Elements
+ * Contains: CSS Reset, Body styles, Links, Common utilities
+ */
+
+/* ========== CSS RESET ========== */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+object,
+embed {
+  vertical-align: top;
+}
+
+legend {
+  display: none;
+}
+
+img,
+abbr,
+acronym,
+fieldset {
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* ========== BODY & TYPOGRAPHY ========== */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  word-break: break-all;
+  color: #323232;
+  background: #eaeaea;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.en {
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  line-height: 2.2;
+}
+
+/* ========== LINKS ========== */
+a {
+  color: #323232;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+a:active,
+a:focus,
+input:active,
+input:focus {
+  outline: none;
+}
+
+/* ========== COMMON UTILITIES ========== */
+#page {
+  overflow: hidden;
+}
+
+.inner {
+  position: relative;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.content a {
+  text-decoration: underline;
+}
+
+.content a:hover {
+  text-decoration: none;
+}
+
+/* Background Circle Pattern */
+[class*="bg-circle"] {
+  position: relative !important;
+}
+
+[class*="bg-circle"]:before {
+  position: absolute;
+  content: "";
+  width: 674px;
+  aspect-ratio: 1 / 1;
+  background: url(../images/circle-white.svg) no-repeat 0 0 / cover;
+}
+
+/* Responsive Utilities */
+.width-full {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+}
+
+.wrap-flex > div {
+  display: flex;
+}
+
+.wp-block-column :where(figure) {
+  margin: 0;
+}
+
+/* ========== RESPONSIVE UTILITIES ========== */
+@media screen and (min-width: 782px) {
+  .sp-show {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 781px) {
+  [class*="bg-circle"]:before {
+    width: 294px;
+  }
+
+  .pc-show {
+    display: none;
+  }
+
+  .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column figure {
+    margin: auto;
+    width: fit-content;
+  }
+
+  .sp-reverse-wrap > div:first-of-type,
+  .sp-reverse > div > div:first-of-type {
+    order: 1;
+  }
+
+  .sp-reverse-wrap > div:last-of-type,
+  .sp-reverse > div > div:last-of-type {
+    order: 0;
+  }
+
+  .wrap-flex > div {
+    flex-wrap: wrap;
+  }
+
+  .wrap-flex > div > div {
+    width: 100%;
+  }
+}

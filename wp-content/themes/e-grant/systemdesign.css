@@ -1,0 +1,228 @@
+/* system design start */
+/* emon */
+.system-designs {
+  max-width: 1200px;
+  font-family: Yu Gothic UI;
+  margin: 80px auto;
+  border-radius: 20px;
+  padding: 90px 0 30px 40px;
+  background: white;
+  z-index: 4;
+  position: relative;
+  margin-top: 40px;
+}
+
+/* emon */
+
+.system-img {
+  padding-left: 400px;
+  display: flex;
+  /* width: 100%; */
+  position: relative;
+  justify-content: start;
+  margin-bottom: -400px;
+  opacity: 100%;
+  z-index: 10;
+}
+/* emon */
+.best-section {
+  margin-top: 40px;
+}
+.columns {
+  max-width: 1200px;
+  display: flex;
+  margin-top: 80px;
+}
+/* emon */
+.left-label {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 24px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 220px;
+  margin-left: 110px;
+}
+
+.content-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/* emon */
+.left-section,
+.right-section {
+  width: 45%;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.left-section h4,
+.right-section h4 {
+  margin-bottom: 4px;
+
+  color: #d40000;
+}
+
+.left-section p {
+  margin: 0 0 18px 0;
+  font-size: 15px;
+}
+
+.list-item {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #d40000;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+.footer-title {
+  text-align: center;
+  font-size: 110px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #c30000;
+  letter-spacing: 2px;
+  font-family: Barlow;
+  display: block;
+}
+.system-title {
+  text-align: center;
+  font-size: 110px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #c30000;
+  letter-spacing: 2px;
+  font-family: Barlow;
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .columns {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .left-label {
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .content-block {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .left-section h4,
+  .right-section h4 {
+    font-size: 18px;
+  }
+
+  .left-section p {
+    font-size: 14px;
+  }
+
+  .footer-title {
+    font-size: 60px;
+  }
+  .system-title {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .system-designs {
+    padding: 60px 20px 30px 20px;
+    margin: 30px;
+  }
+  .footer-title {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  .left-label {
+    font-size: 20px;
+  }
+
+  .left-section h4,
+  .right-section h4 {
+    font-size: 16px;
+  }
+
+  .left-section p,
+  .list-item {
+    font-size: 13px;
+  }
+
+  .system-img {
+    padding-left: 0px;
+  }
+  /* emon */
+  .system-title {
+    font-size: 40px;
+    margin-top: -90px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    display: flex;
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+  }
+}
+/* emon */
+@media (max-width: 325px) {
+  .system-title {
+    display: none;
+    /* Hide on very small screens */
+    font-size: 20px;
+    font-weight: 15px;
+    margin-top: 20px;
+  }
+
+  .left-label {
+    display: none; /* Hide vertical label on very small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .columns {
+    margin-top: 20px;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .list-item {
+    gap: 6px;
+  }
+
+  .footer-title {
+    font-size: 30px;
+  }
+}
+/* system design end */

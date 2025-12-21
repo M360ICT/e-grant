@@ -1,0 +1,104 @@
+/* faqs css start */
+.two-cards {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1460px;
+  flex-wrap: wrap;
+  font-family: Yu Gothic UI;
+}
+
+.card-wrap {
+  position: relative;
+  width: 45%;
+  min-width: 280px;
+}
+
+.card-wrap figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+/* Position text on top of image */
+.card-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: white;
+}
+
+/* left side */
+.card-text.left {
+  left: 250px;
+  text-align: center;
+}
+
+/* right side */
+.card-text.right {
+  left: 250px;
+  text-align: center;
+}
+
+.card-text h2 {
+  margin: 10px 0;
+  font-size: 40px;
+}
+
+.card-text button {
+  padding: 10px 40px;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  width: auto; /* important */
+  max-width: 100%;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .two-cards {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .card-text.left {
+    /* left: 40px; */
+    right: auto;
+    /* text-align: left; */
+  }
+
+  .card-text.right {
+    /* right: 40px; */
+    left: auto;
+    /* text-align: right; */
+  }
+
+  .card-text h2 {
+    font-size: 40px;
+  }
+
+  .card-text button {
+    padding: 12px 10px;
+    width: 200px;
+    font-size: 18px;
+  }
+  .card-wrap {
+    width: 100%;
+  }
+  .card-text.left,
+  .card-text.right {
+    left: 50px;
+    right: 50px;
+  }
+  .card-text h2 {
+    font-size: 28px;
+  }
+}
+
+.faq-section {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+/* faqs css end */

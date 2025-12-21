@@ -1,0 +1,70 @@
+/* Hero */
+
+.header-style-1 {
+  background-image: none !important;
+  height: 100vh !important;
+  border-radius: 0 !important;
+}
+
+.hero-banner-title h1 {
+  position: relative !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  flex: 1 1 calc(25% - 10px);
+  flex-wrap: wrap;
+}
+
+.hero-banner {
+  margin-top: -90px;
+}
+
+.hero-banner-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+.hero-banner-title h2 {
+  font-size: 45px;
+  margin-right: 20%;
+}
+
+.hero-banner-logo {
+  /* margin-top: 170px; */
+  z-index: 9999;
+}
+
+.bg-style-inner-1 {
+  width: 50%;
+  margin-left: auto;
+  color: #fff;
+  position: relative;
+  padding-top: 90px;
+}
+
+.bg-style-inner-1 p {
+  font-size: 132px;
+  line-height: 1.2;
+}
+
+.bg-style-inner-1 p span {
+  font-size: 90px;
+  display: block;
+}
+
+.bg-style-inner-1 h4 span {
+  display: block;
+  font-size: 22px;
+}
+
+.bg-style-inner-1 h4 {
+  font-size: 80px;
+}

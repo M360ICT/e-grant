@@ -1,0 +1,41 @@
+.interview-img-right-style .bg-style-inner-1 {
+  margin-right: auto;
+}
+
+.interview-img-right-style .bg-style-inner-1 p span {
+  font-size: 70px;
+}
+
+.interview-img-right-style .bg-style-inner-1 {
+  padding-top: 120px;
+}
+
+.text-horijon {
+  font-size: 56px;
+  width: 56px;
+  height: 354px;
+
+  opacity: 1;
+}
+
+.interview-img-middle-style .bg-style-inner-1 {
+  display: flex;
+  width: 100%;
+  padding: 0 60px;
+  align-items: end;
+  height: calc(100vh - 100px);
+  justify-content: space-around;
+}
+
+.interview-img-middle-style {
+  height: unset;
+}
+
+.interview-img-middle-style .bg-style-inner-1 p {
+  font-size: 61px;
+}
+
+.interview-img-middle-style .bg-style-inner-1 p span {
+  font-size: 122px;
+  font-weight: 700;
+}
