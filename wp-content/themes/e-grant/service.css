@@ -244,6 +244,21 @@
   .service-smallcard-wrapper > * {
     flex: 0 0 calc(100% - 10px);
   }
+  /* .service-small-card {
+    background-color: #a52f2f;
+    width: fit-content;
+    padding: 0px 20px 30px 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
+    border-radius: 15px;
+  } */
+}
+
+@media screen and (max-width: 1042px) {
   .service-small-card {
     background-color: #a52f2f;
     width: fit-content;
