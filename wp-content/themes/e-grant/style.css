@@ -216,7 +216,8 @@ input:focus {
   #header {
     padding: 11px 0 0;
     min-height: 352px;
-    background: #c30000 url(images/bg-header-2-sp.svg) no-repeat 100% 60px / 160px auto;
+    background: #c30000 url(images/bg-header-2-sp.svg) no-repeat 100% 60px /
+      160px auto;
     border-radius: 0 0 80px 0;
   }
 
@@ -296,7 +297,6 @@ input:focus {
 }
 
 @media screen and (min-width: 782px) {
-
   #menu,
   #sp-btns,
   #sp-menu {
@@ -304,7 +304,7 @@ input:focus {
   }
 
   .footer-upper,
-  .footer-upper>div,
+  .footer-upper > div,
   .footer-lower {
     display: flex;
     justify-content: space-between;
@@ -514,7 +514,7 @@ p {
   writing-mode: vertical-rl;
 }
 
-.wrap-flex>div {
+.wrap-flex > div {
   display: flex;
 }
 
@@ -533,26 +533,26 @@ p {
     display: none;
   }
 
-  .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column figure {
+  .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column figure {
     margin: auto;
     width: fit-content;
   }
 
-  .sp-reverse-wrap>div:first-of-type,
-  .sp-reverse>div>div:first-of-type {
+  .sp-reverse-wrap > div:first-of-type,
+  .sp-reverse > div > div:first-of-type {
     order: 1;
   }
 
-  .sp-reverse-wrap>div:last-of-type,
-  .sp-reverse>div>div:last-of-type {
+  .sp-reverse-wrap > div:last-of-type,
+  .sp-reverse > div > div:last-of-type {
     order: 0;
   }
 
-  .wrap-flex>div {
+  .wrap-flex > div {
     flex-wrap: wrap;
   }
 
-  .wrap-flex>div>div {
+  .wrap-flex > div > div {
     width: 100%;
   }
 }
@@ -740,7 +740,7 @@ p {
     left: calc((100% - 1340px) / 2);
   }
 
-  .interview-img-3>div {
+  .interview-img-3 > div {
     margin-top: 140px;
     justify-content: space-between;
   }
@@ -936,11 +936,13 @@ p {
     width: 720px;
     height: 720px;
     border-radius: 50%;
-    background: linear-gradient(180deg,
-        transparent 0%,
-        transparent 80%,
-        #c30000 80%,
-        #c30000 100%);
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 80%,
+      #c30000 80%,
+      #c30000 100%
+    );
     z-index: 0;
   }
 
@@ -1130,7 +1132,7 @@ p {
 }
 
 @media screen and (min-width: 782px) {
-  .question>div {
+  .question > div {
     gap: 90px;
     padding-bottom: 30px;
   }
@@ -1147,15 +1149,15 @@ p {
     padding-bottom: 240px;
   }
 
-  #q2 .question>div {
+  #q2 .question > div {
     padding-bottom: 60px;
   }
 
-  #q4 .question>div {
+  #q4 .question > div {
     padding-bottom: 80px;
   }
 
-  #q5 .question>div {
+  #q5 .question > div {
     padding-bottom: 50px;
   }
 
@@ -1235,7 +1237,7 @@ p {
     background: #c30000;
   }
 
-  .question>div {
+  .question > div {
     flex-wrap: nowrap;
     padding-bottom: 30px;
   }
@@ -1514,15 +1516,15 @@ p {
   line-height: 2.11;
 }
 
-.interview-list>a {
+.interview-list > a {
   position: relative;
 }
 
-.interview-list>a:hover {
+.interview-list > a:hover {
   opacity: 1;
 }
 
-.interview-list>a:hover>div {
+.interview-list > a:hover > div {
   position: relative;
   z-index: 10;
   opacity: 0.7;
@@ -1557,14 +1559,14 @@ p {
     max-width: 356px;
   }
 
-  .interview-list>a {
+  .interview-list > a {
     margin-bottom: 70px;
     width: 33%;
     max-width: 356px;
   }
 
   @media screen and (max-width: 1130px) {
-    .interview-list>a {
+    .interview-list > a {
       width: auto;
     }
   }
@@ -1603,7 +1605,8 @@ p {
 
 @media screen and (max-width: 781px) {
   body:not(#page-interview) {
-    background: #eaeaea url(images/circle-white.svg) no-repeat calc(100% + 90px) 257px / 366px auto;
+    background: #eaeaea url(images/circle-white.svg) no-repeat calc(100% + 90px)
+      257px / 366px auto;
   }
 
   #interview-archive:before {
@@ -1620,7 +1623,8 @@ p {
 
   .interview-list {
     padding-bottom: 200px;
-    background: url(images/omotech-white-square.svg) no-repeat 50% 100% / 100% auto;
+    background: url(images/omotech-white-square.svg) no-repeat 50% 100% / 100%
+      auto;
   }
 
   .interview-list a {
@@ -1653,7 +1657,7 @@ p {
     margin: 0;
   }
 
-  #interview-archive .interview-list .info>div {
+  #interview-archive .interview-list .info > div {
     display: flex;
     align-items: center;
     gap: 9px;
@@ -1724,28 +1728,11 @@ p {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* emon */
-
-
 
 /* Updated Code By Shakil */
 
 @media screen and (max-width: 768px) {
-
   /* Title container on right */
   .hero-mobile-title {
     writing-mode: vertical-rl;
@@ -2165,9 +2152,6 @@ p {
   margin-top: 10px;
 }
 
-
-
-
 /*NEW*/
 /* Services by Shakil */
 
@@ -2183,6 +2167,7 @@ p {
   left: 0px;
   width: 695px;
   height: 375px;
+  z-index: 999px;
 }
 
 .service-slogan {
@@ -2213,6 +2198,7 @@ p {
   width: 1015px;
   background-color: #a52f2f;
   border-radius: 30px;
+  z-index: 2;
 }
 
 .service-card {
@@ -2305,7 +2291,7 @@ p {
   gap: 60px;
 }
 
-.service-smallcard-wrapper>* {
+.service-smallcard-wrapper > * {
   flex: 0 0 calc(50% - 30px);
 }
 
@@ -2436,7 +2422,7 @@ p {
     gap: 20px;
   }
 
-  .service-smallcard-wrapper>* {
+  .service-smallcard-wrapper > * {
     flex: 0 0 calc(100% - 10px);
   }
 
@@ -2556,7 +2542,7 @@ p {
     gap: 20px;
   }
 
-  .service-smallcard-wrapper>* {
+  .service-smallcard-wrapper > * {
     flex: 0 0 calc(50% - 10px);
   }
 
@@ -2659,7 +2645,8 @@ p {
   content: "";
   width: 260px;
   aspect-ratio: 1 / 1;
-  background: url(/wp-content/themes/e-grant/images/home/problem-bg.png) no-repeat center / cover;
+  background: url(/wp-content/themes/e-grant/images/home/problem-bg.png)
+    no-repeat center / cover;
   opacity: 0.3;
   /* ✅ proper opacity */
   z-index: -0px;
@@ -2764,7 +2751,8 @@ p {
     content: "";
     width: 150px;
     aspect-ratio: 1 / 1;
-    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png) no-repeat center / cover;
+    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png)
+      no-repeat center / cover;
     opacity: 0.9;
     /* ✅ proper opacity */
     z-index: 7;
@@ -2842,7 +2830,8 @@ p {
     content: "";
     width: 150px;
     aspect-ratio: 1 / 1;
-    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png) no-repeat center / cover;
+    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png)
+      no-repeat center / cover;
     opacity: 0.9;
     /* ✅ proper opacity */
     z-index: 7;
@@ -2931,7 +2920,8 @@ p {
     content: "";
     width: 150px;
     aspect-ratio: 1 / 1;
-    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png) no-repeat center / cover;
+    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png)
+      no-repeat center / cover;
     opacity: 0.9;
     /* ✅ proper opacity */
     z-index: 7;
@@ -3019,7 +3009,8 @@ p {
     content: "";
     width: 180px;
     aspect-ratio: 1 / 1;
-    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png) no-repeat center / cover;
+    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png)
+      no-repeat center / cover;
     opacity: 0.9;
     /* ✅ proper opacity */
     z-index: 7;
@@ -3107,7 +3098,8 @@ p {
     content: "";
     width: 250px;
     aspect-ratio: 1 / 1;
-    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png) no-repeat center / cover;
+    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png)
+      no-repeat center / cover;
     opacity: 0.9;
     /* ✅ proper opacity */
     z-index: 7;
@@ -4022,7 +4014,6 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-
   /* Title container on right */
   .hero-mobile-title {
     writing-mode: vertical-rl;
@@ -4457,10 +4448,8 @@ p {
 
 /* Updated Code By Shakil */
 
-
 @media screen and (max-width: 811px) {
   #recruit-banner {
-
     overflow: hidden;
   }
 }
