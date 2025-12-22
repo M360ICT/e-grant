@@ -125,7 +125,7 @@
   width: 100%;
 }
 
-.service-small-card img {
+.service-small-card-img {
   width: 200px;
   height: 210px;
   /* object-fit: cover; */
@@ -168,7 +168,7 @@
 /* Small Mobile (<576px) */
 @media screen and (max-width: 575px) {
   .service-title {
-    font-size: 40px;
+    font-size: 48px;
   }
 
   .service-slogan {
@@ -182,16 +182,30 @@
   .service-card {
     padding: 20px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-card p {
+    padding: 15px !important;
+    width: 100%;
+  }
+  .service-button-two {
+    width: fit-content;
+  }
+  .service-button {
+    width: max-content;
+    align-self: start;
   }
 
   .card-wrapper {
     background-color: #a52f2f;
     border-radius: 0px;
     margin-top: 190px;
-    padding: 60px 0;
+    padding: 60px 20px;
   }
   .service-header {
-    padding: 0px 20px;
+    padding: 0px 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -201,7 +215,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    height: auto;
+    height: 220px;
     margin: 0;
     border-radius: 20px;
   }
@@ -211,12 +225,14 @@
   .service-smallcard-wrapper > * {
     flex: 0 0 100%;
   }
-
+  .service-small-logo {
+    width: 260px;
+  }
   .service-small-card {
     padding: 20px;
   }
 
-  .service-small-card img {
+  .service-small-card-img {
     padding: 0px;
     width: auto;
   }
@@ -230,6 +246,9 @@
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .service-title {
     font-size: 40px;
+  }
+  .service-card-logo {
+    width: 120px;
   }
 
   .service-slogan {
@@ -277,7 +296,7 @@
     padding: 20px;
   }
 
-  .service-small-card img {
+  .service-small-card-img {
     padding: 0px;
     width: auto;
   }
@@ -414,7 +433,7 @@
     width: 100%;
   }
 
-  .service-small-card img {
+  .service-small-card-img {
     width: 200px;
     height: 210px;
     /* object-fit: cover; */
@@ -596,7 +615,7 @@
     width: 100%;
   }
 
-  .service-small-card img {
+  .service-small-card-img {
     width: 200px;
     height: 210px;
     /* object-fit: cover; */
