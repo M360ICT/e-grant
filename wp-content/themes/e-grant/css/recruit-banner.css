@@ -4,6 +4,11 @@
  */
 
 /* ========== RECRUIT BANNER ========== */
+
+#recruit-banner {
+    overflow: hidden;
+}
+
 .recruit-banner-circle {
     position: relative;
     display: flex;
@@ -99,6 +104,8 @@
     .recruit-banner-circle-wrap {
         scale: 0.6;
     }
+
+
 }
 
 /* ========== MOBILE RECRUIT BANNER ========== */
@@ -147,5 +154,12 @@
         width: 333px;
         top: 180px;
         left: 180px;
+    }
+}
+
+@media screen and (min-width: 1880px) {
+    #recruit-banner {
+
+        overflow: visible;
     }
 }
