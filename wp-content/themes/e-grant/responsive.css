@@ -113,7 +113,6 @@
 
   .bg-style-inner-1 h4 {
     font-size: 36px;
-    margin-top: 200px;
   }
 
   .bg-style-inner-1 {
@@ -131,6 +130,7 @@
 
   .interview-img-right-style h4 {
     margin: 0;
+    margin-top: 90px;
   }
 
   /* .interview-img-right-style .bg-style-inner-1 {

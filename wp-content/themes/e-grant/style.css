@@ -3384,8 +3384,9 @@ p {
 .message-container {
   background-color: #fff;
   max-width: 1296px;
+  min-height: 100vh;
   border-radius: 800px 0 0 800px;
-  height: 700px;
+
   width: 100%;
   display: flex;
   align-items: center;
@@ -3660,11 +3661,11 @@ p {
 
 .content-section {
   position: absolute;
-  /* logo এর ওপর বসবে */
+
   top: 50%;
-  /* logo এর মধ্যে vertically center */
+
   left: 50%;
-  /* horizontally center */
+
   transform: translate(-50%, -50%);
   text-align: center;
   color: #000;
@@ -3964,7 +3965,6 @@ p {
 
   .bg-style-inner-1 h4 {
     font-size: 36px;
-    margin-top: 200px;
   }
 
   .bg-style-inner-1 {
@@ -4180,15 +4180,18 @@ p {
   .bg-style-inner-1 p span {
     font-size: 90px;
     display: block;
+    margin-top: 40px;
   }
 
   .bg-style-inner-1 h4 span {
     display: block;
     font-size: 18px;
+    margin-top: 40px;
   }
 
   .bg-style-inner-1 h4 {
     font-size: 80px;
+    margin-top: 40px;
   }
 }
 
