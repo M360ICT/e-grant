@@ -53,6 +53,7 @@
 .bg-style-inner-1 p {
   font-size: 132px;
   line-height: 1.2;
+  margin-bottom: 50px;
 }
 
 .bg-style-inner-1 p span {
@@ -67,4 +68,5 @@
 
 .bg-style-inner-1 h4 {
   font-size: 80px;
+  margin-bottom: 50px;
 }

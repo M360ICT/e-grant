@@ -1,477 +1,3 @@
-/* Services by Shakil
-
-.service-section {
-  background: #c30000;
-  color: #fff;
-}
-
-.service {
-  width: 1260px;
-  margin: 0 auto;
-  padding: 60px 0px;
-}
-
-.service-banner {
-  position: absolute;
-  top: 40px;
-  left: 0px;
-  width: 695px;
-  height: 375px;
-}
-
-.service-slogan {
-  font-weight: 400;
-  font-style: semi-bold;
-  font-size: 20px;
-  font-family: Segoe UI;
-}
-
-.service-title {
-  font-weight: 600;
-  font-style: semi-bold;
-  font-size: 110px;
-  font-family: barlow;
-}
-
-.service-sub-title {
-  font-weight: 700;
-  font-style: bold;
-  font-size: 30px;
-  font-family: Yu Gothic UI;
-}
-
-.card-wrapper {
-  display: flex;
-  justify-content: end;
-  margin: 40px 0px;
-  width: 1015px;
-  background-color: #a52f2f;
-  border-radius: 30px;
-}
-
-.service-card {
-  width: 600px;
-  display: flex;
-  padding: 40px 80px;
-  gap: 20px;
-  border-radius: 20px;
-  flex-direction: column;
-}
-
-.service-white {
-  display: flex;
-  justify-content: end;
-  position: relative;
-}
-
-.service-logo {
-  width: 285px;
-}
-
-.service-button {
-  background: #c30000;
-  color: #fff;
-  padding: 10px 20px;
-  font-weight: 400;
-  font-size: 13px;
-  font-family: Segoe UI;
-  border: none;
-  border-radius: 20px;
-  width: fit-content;
-  cursor: pointer;
-}
-
-.service-button-two {
-  background: transparent;
-  color: #fff;
-  padding: 15px 80px;
-  font-weight: 700;
-  font-size: 15px;
-  font-family: Segoe UI;
-  border: 1px solid #fff;
-  border-radius: 50px;
-  width: fit-content;
-  cursor: pointer;
-}
-
-.service-card p {
-  font-weight: 400;
-  font-size: 16px;
-  font-family: Segoe UI;
-}
-
-.service-small-card {
-  background-color: #a52f2f;
-  width: fit-content;
-  padding: 0px 60px 80px 60px;
-  width: 50% ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  flex-direction: column;
-  border-radius: 15px;
-}
-
-.service-small-card img {
-  width: 200px;
-  height: 210px;
-}
-
-.service-small-card h3 {
-  text-align: center;
-  font-size: 20px;
-}
-
-.service-small-card p {
-  font-size: 15px;
-}
-
-.service-smallcard-wrapper {
-  display: flex;
-  flex-basis: 2;
-  gap: 60px !important;
-  flex-wrap: wrap;
-}
-
-.service-smallcard-wrapper > * {
-  flex: 0 0 calc(50% - 30px);
-}
-
-.card-wrapper::after {
-  position: absolute;
-  top: 305px;
-  left: 300px;
-  content: "";
-  width: 304px;
-  aspect-ratio: 1 / 1;
-  background: url(images/circle-white.svg) no-repeat center / cover;
-  opacity: 0.5;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.card-wrapper::before {
-  position: absolute;
-  top: 900px;
-  right: 300px;
-  content: "";
-  width: 304px;
-  aspect-ratio: 1 / 1;
-  background: url(images/circle-white.svg) no-repeat center / cover;
-  opacity: 0.5;
-  z-index: 0;
-  pointer-events: none;
-}
-
-@media screen and (max-width: 781px) {
-  .service {
-    background: #c30000;
-    color: #fff;
-    padding: 30px 30px;
-  }
-
-  .service-title {
-    font-weight: 600;
-    font-style: semi-bold;
-    font-size: 40px;
-    font-family: barlow;
-  }
-
-  .service-slogan {
-    font-weight: 400;
-    font-style: semi-bold;
-    font-size: 15px;
-    font-family: Segoe UI;
-  }
-
-  .service-sub-title {
-    font-weight: 500;
-    font-style: bold;
-    font-size: 20px;
-    font-family: Yu Gothic UI;
-  }
-
-  .service-white {
-    display: flex;
-    justify-content: start;
-  }
-
-  .service-card {
-    width: 100%;
-    display: flex;
-    padding: 40px 80px;
-    gap: 20px;
-    border-radius: 20px;
-    flex-direction: column;
-  }
-
-  .service-banner {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 275px;
-    margin-top: 15px;
-  }
-
-  .card-wrapper {
-    display: flex;
-    margin-top: 250px;
-    padding-top: 10px;
-    width: 100%;
-    justify-content: center;
-    background-color: #a52f2f;
-    border-radius: 30px;
-  }
-
-  .service-button-two {
-    background: transparent;
-    color: #fff;
-    padding: 15px 10px;
-    font-weight: 500;
-    font-size: 12px;
-    font-family: Segoe UI;
-    border: 1px solid #fff;
-    border-radius: 50px;
-    width: 50%;
-    cursor: pointer;
-    justify-content: center;
-    align-self: center;
-  }
-
-  .service-white {
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-
-  .service-logo {
-    width: 285px;
-  }
-
-  .service-card {
-    width: 100%;
-    display: flex;
-    padding: 40px 20px;
-    gap: 20px;
-    border-radius: 20px;
-    flex-direction: column;
-  }
-
-  .service-smallcard-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .service-smallcard-wrapper > * {
-    flex: 0 0 calc(100% - 10px);
-  }
-
-  .service-small-card {
-    background-color: #a52f2f;
-    width: fit-content;
-    padding: 0px 20px 30px 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    flex-direction: column;
-    border-radius: 15px;
-  }
-}
-
-@media screen and (min-width: 781px) and (max-width: 1010px) {
-  .service {
-    background: #c30000;
-    color: #fff;
-    padding: 30px 30px;
-  }
-
-  .service-title {
-    font-weight: 600;
-    font-style: semi-bold;
-    font-size: 50px;
-    font-family: barlow;
-  }
-
-  .service-slogan {
-    font-weight: 400;
-    font-style: semi-bold;
-    font-size: 18px;
-    font-family: Segoe UI;
-  }
-
-  .service-sub-title {
-    font-weight: 500;
-    font-style: bold;
-    font-size: 24px;
-    font-family: Yu Gothic UI;
-  }
-
-  .service-white {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-  }
-
-  .service-card {
-    width: 600px;
-    display: flex;
-    padding: 40px 80px;
-    gap: 20px;
-    border-radius: 20px;
-    flex-direction: column;
-  }
-
-  .service-banner {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 375px;
-    margin-top: 15px;
-  }
-
-  .card-wrapper {
-    display: flex;
-    margin-top: 350px;
-    padding-top: 10px;
-    width: 100%;
-    justify-content: center;
-    background-color: #a52f2f;
-    border-radius: 30px;
-  }
-
-  .service-button-two {
-    background: transparent;
-    color: #fff;
-    padding: 15px 10px;
-    font-weight: 500;
-    font-size: 12px;
-    font-family: Segoe UI;
-    border: 1px solid #fff;
-    border-radius: 50px;
-    width: 50%;
-    cursor: pointer;
-    justify-content: center;
-    align-self: center;
-  }
-
-  .service-white {
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-
-  .service-logo {
-    width: 285px;
-  }
-
-  .service-card {
-    width: full;
-    display: flex;
-    padding: 40px 20px;
-    gap: 20px;
-    border-radius: 20px;
-    flex-direction: column;
-  }
-
-  .service-smallcard-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .service-smallcard-wrapper > * {
-    flex: 0 0 calc(50% - 10px);
-  }
-
-  .service-small-card {
-    background-color: #a52f2f;
-    width: fit-content;
-    padding: 0px 20px 30px 20px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    flex-direction: column;
-    border-radius: 15px;
-  }
-}
-
-@media screen and (min-width: 1011px) and (max-width: 1280px) {
-  .service {
-    background: #c30000;
-    color: #fff;
-    padding: 60px 40px;
-  }
-
-  .service-banner {
-    width: 420px;
-    max-width: 100%;
-  }
-
-  .card-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    margin: 40px 0;
-    width: 550px;
-    max-width: 100%;
-    background-color: #a52f2f;
-    border-radius: 30px;
-  }
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1440px) {
-  .service {
-    background: #c30000;
-    color: #fff;
-    padding: 60px 120px;
-  }
-
-  .service-banner {
-    width: 500px;
-    max-width: 100%;
-  }
-
-  .card-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    margin: 40px 0;
-    width: 650px;
-    max-width: 100%;
-    background-color: #a52f2f;
-    border-radius: 30px;
-  }
-}
-
-@media screen and (min-width: 1440px) and (max-width: 1640px) {
-  .service {
-    background: #c30000;
-    color: #fff;
-    padding: 60px 120px;
-  }
-
-  .service-banner {
-    width: 550px;
-    max-width: 100%;
-  }
-
-  .card-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    margin: 40px 0;
-    width: 750px;
-    max-width: 100%;
-    background-color: #a52f2f;
-    border-radius: 30px;
-  }
-} */
-
 /* Base Styles */
 .service-section {
   background: #c30000;
@@ -582,7 +108,7 @@
   gap: 25px;
 }
 
-.service-smallcard-wrapper > * {
+.service-smallcard-wrapper>* {
   flex: 0 0 calc(50% - 12.5px);
 }
 
@@ -601,7 +127,7 @@
 .service-small-card img {
   width: 200px;
   height: 210px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .service-small-card h3 {
@@ -643,16 +169,20 @@
   .service-title {
     font-size: 40px;
   }
+
   .service-slogan {
     font-size: 15px;
   }
+
   .service-sub-title {
     font-size: 20px;
   }
+
   .service-card {
     padding: 20px;
     width: 100%;
   }
+
   .card-wrapper {
     flex-direction: column;
     margin-top: 250px;
@@ -660,15 +190,19 @@
     width: 100%;
     justify-content: center;
   }
+
   .service-banner {
     height: 230px;
   }
-  .service-smallcard-wrapper > * {
+
+  .service-smallcard-wrapper>* {
     flex: 0 0 100%;
   }
+
   .service-small-card {
     padding: 20px;
   }
+
   .service-small-card img {
     padding: 0px;
     width: auto;
@@ -680,13 +214,16 @@
   .service-title {
     font-size: 50px;
   }
+
   .service-slogan {
     font-size: 18px;
   }
+
   .service-sub-title {
     font-size: 24px;
   }
-  .service-smallcard-wrapper > * {
+
+  .service-smallcard-wrapper>* {
     flex: 0 0 calc(50% - 12.5px);
   }
 }
@@ -696,21 +233,26 @@
   .service-title {
     font-size: 70px;
   }
+
   .service-sub-title {
     font-size: 28px;
   }
+
   .service-card {
     padding: 30px 40px;
     width: 100%;
   }
+
   .card-wrapper {
     width: 100%;
     max-width: 800px;
     justify-content: flex-end;
   }
-  .service-smallcard-wrapper > * {
+
+  .service-smallcard-wrapper>* {
     flex: 0 0 calc(50% - 12.5px);
   }
+
   .card-wrapper {
     margin-top: 410px;
   }
@@ -722,10 +264,12 @@
     width: 500px;
     padding: 30px 50px;
   }
+
   .card-wrapper {
     width: 600px;
     justify-content: flex-end;
   }
+
   .service-banner {
     width: 500px;
     height: 370px;
@@ -738,6 +282,7 @@
     width: 600px;
     padding: 40px 80px;
   }
+
   .card-wrapper {
     width: 750px;
     justify-content: flex-end;
