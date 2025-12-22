@@ -5,147 +5,156 @@
 
 /* ========== RECRUIT BANNER ========== */
 .recruit-banner-circle {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 488px;
-    aspect-ratio: 1 / 1;
-    font-size: 30px;
-    font-weight: 700;
-    color: #c30000;
-    border-radius: 50%;
-    z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 488px;
+  aspect-ratio: 1 / 1;
+  font-size: 30px;
+  font-weight: 700;
+  color: #c30000;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .recruit-banner-circle:after {
-    position: absolute;
-    top: -29px;
-    left: -54px;
-    width: 594px;
-    content: "";
-    aspect-ratio: 1 / 1;
-    border: 54px solid #c30000;
-    border-radius: 50%;
-    z-index: 0;
+  position: absolute;
+  top: -29px;
+  left: -54px;
+  width: 594px;
+  content: "";
+  aspect-ratio: 1 / 1;
+  border: 54px solid #c30000;
+  border-radius: 50%;
+  z-index: 0;
 }
 
 .recruit-banner-circle .en {
-    display: block;
-    font-size: 110px;
+  display: block;
+  font-size: 110px;
 }
 
 .recruit-banner-circle a {
-    position: relative;
-    margin-top: 28px;
-    display: inline-block;
-    width: 240px;
-    font-size: 18px;
-    line-height: 54px;
-    color: #c30000;
-    border: 1px solid #c30000;
-    border-radius: 100vh;
-    z-index: 10;
-    transition: 0.3s;
+  position: relative;
+  margin-top: 28px;
+  display: inline-block;
+  width: 240px;
+  font-size: 18px;
+  line-height: 54px;
+  color: #c30000;
+  border: 1px solid #c30000;
+  border-radius: 100vh;
+  z-index: 10;
+  transition: 0.3s;
 }
 
 .recruit-banner-circle:before {
+  width: 594px;
+  top: 150px;
+  left: 270px;
+  z-index: -1;
+  overflow: hidden;
+}
+@media (max-width: 1032px) {
+  .recruit-banner-circle:before {
     width: 594px;
     top: 150px;
-    left: 270px;
+    left: 200px;
     z-index: -1;
     overflow: hidden;
+  }
 }
 
 .recruit-banner-circle a:hover {
-    color: #fff;
-    background: #c30000;
-    opacity: 1;
+  color: #fff;
+  background: #c30000;
+  opacity: 1;
 }
 
 /* ========== DESKTOP RECRUIT BANNER ========== */
 @media screen and (min-width: 811px) {
-    #recruit-banner {
-        position: relative;
-        margin: auto;
-        width: 100%;
-        max-width: 1600px;
-        aspect-ratio: 1 / 0.65;
-    }
+  #recruit-banner {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 1600px;
+    aspect-ratio: 1 / 0.65;
+  }
 
-    .recruit-banner img {
-        width: 1317px;
-    }
+  .recruit-banner img {
+    width: 1317px;
+  }
 
-    .recruit-banner {
-        position: absolute;
-        top: 60px;
-        left: -100px;
-    }
+  .recruit-banner {
+    position: absolute;
+    top: 60px;
+    left: -100px;
+  }
 
-    .recruit-banner-circle-wrap {
-        position: absolute;
-        top: 162px;
-        right: 9.0625vw;
-    }
+  .recruit-banner-circle-wrap {
+    position: absolute;
+    top: 162px;
+    right: 9.0625vw;
+  }
 }
 
 @media screen and (min-width: 811px) and (max-width: 1439px) {
-    .recruit-banner img {
-        width: 82vw;
-    }
+  .recruit-banner img {
+    width: 82vw;
+  }
 
-    .recruit-banner-circle-wrap {
-        scale: 0.6;
-    }
+  .recruit-banner-circle-wrap {
+    scale: 0.6;
+  }
 }
 
 /* ========== MOBILE RECRUIT BANNER ========== */
 @media screen and (max-width: 810px) {
-    .recruit-banner {
-        position: relative;
-        top: -50px;
-        left: -13.33vw;
-    }
+  .recruit-banner {
+    position: relative;
+    top: -50px;
+    left: -13.33vw;
+  }
 
-    .recruit-banner img {
-        max-width: initial;
-        width: 106vw;
-    }
+  .recruit-banner img {
+    max-width: initial;
+    width: 106vw;
+  }
 
-    .recruit-banner-circle-wrap {
-        position: relative;
-        top: -100px;
-        left: 20px;
-    }
+  .recruit-banner-circle-wrap {
+    position: relative;
+    top: -100px;
+    left: 20px;
+  }
 
-    .recruit-banner-circle {
-        width: 333px;
-        height: 333px;
-        font-size: 20px;
-    }
+  .recruit-banner-circle {
+    width: 333px;
+    height: 333px;
+    font-size: 20px;
+  }
 
-    .recruit-banner-circle .en {
-        font-size: 60px;
-    }
+  .recruit-banner-circle .en {
+    font-size: 60px;
+  }
 
-    .recruit-banner-circle:after {
-        top: 0;
-        left: 0;
-        width: 333px;
-        border-width: 30px;
-    }
+  .recruit-banner-circle:after {
+    top: 0;
+    left: 0;
+    width: 333px;
+    border-width: 30px;
+  }
 
-    .recruit-banner-circle a {
-        margin-top: 15px;
-        width: 170px;
-        font-size: 15px;
-    }
+  .recruit-banner-circle a {
+    margin-top: 15px;
+    width: 170px;
+    font-size: 15px;
+  }
 
-    .recruit-banner-circle:before {
-        width: 333px;
-        top: 180px;
-        left: 180px;
-    }
+  .recruit-banner-circle:before {
+    width: 333px;
+    top: 180px;
+    left: 180px;
+  }
 }
