@@ -7,7 +7,7 @@
 .service {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 60px 0px;
   position: relative;
 }
 
@@ -16,7 +16,8 @@
   top: 40px;
   left: 0;
   width: 640px;
-  max-width: 100%;
+  max-width: 90%;
+  margin: 0px auto;
   height: 400px;
   z-index: 999;
 }
@@ -108,7 +109,7 @@
   gap: 25px;
 }
 
-.service-smallcard-wrapper>* {
+.service-smallcard-wrapper > * {
   flex: 0 0 calc(50% - 12.5px);
 }
 
@@ -124,7 +125,7 @@
   width: 100%;
 }
 
-.service-small-card img {
+.service-small-card-img {
   width: 200px;
   height: 210px;
   /* object-fit: cover; */
@@ -167,7 +168,87 @@
 /* Small Mobile (<576px) */
 @media screen and (max-width: 575px) {
   .service-title {
+    font-size: 48px;
+  }
+
+  .service-slogan {
+    font-size: 15px;
+  }
+
+  .service-sub-title {
+    font-size: 20px;
+  }
+
+  .service-card {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-card p {
+    padding: 15px !important;
+    width: 100%;
+  }
+  .service-button-two {
+    width: fit-content;
+  }
+  .service-button {
+    width: max-content;
+    align-self: start;
+  }
+
+  .card-wrapper {
+    background-color: #a52f2f;
+    border-radius: 0px;
+    margin-top: 190px;
+    padding: 60px 20px;
+  }
+  .service-header {
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .service-banner {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 220px;
+    margin: 0;
+    border-radius: 20px;
+  }
+  .service-smallcard-wrapper {
+    padding: 0px 20px;
+  }
+  .service-smallcard-wrapper > * {
+    flex: 0 0 100%;
+  }
+  .service-small-logo {
+    width: 260px;
+  }
+  .service-small-card {
+    padding: 20px;
+  }
+
+  .service-small-card-img {
+    padding: 0px;
+    width: auto;
+  }
+  .service-white {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Other Mobiles (576px – 768px) */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .service-title {
     font-size: 40px;
+  }
+  .service-card-logo {
+    width: 120px;
   }
 
   .service-slogan {
@@ -184,18 +265,30 @@
   }
 
   .card-wrapper {
+    background-color: #a52f2f;
+    border-radius: 0px;
+    margin-top: 290px;
+    padding: 60px 0;
+  }
+  .service-header {
+    padding: 0px 20px;
+    display: flex;
     flex-direction: column;
-    margin-top: 250px;
-    padding-top: 10px;
-    width: 100%;
-    justify-content: center;
+    gap: 10px;
   }
 
   .service-banner {
-    height: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: auto;
+    margin: 0;
+    border-radius: 20px;
   }
-
-  .service-smallcard-wrapper>* {
+  .service-smallcard-wrapper {
+    padding: 0px 20px;
+  }
+  .service-smallcard-wrapper > * {
     flex: 0 0 100%;
   }
 
@@ -203,64 +296,185 @@
     padding: 20px;
   }
 
-  .service-small-card img {
+  .service-small-card-img {
     padding: 0px;
     width: auto;
   }
-}
-
-/* Other Mobiles (576px – 768px) */
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  .service-title {
-    font-size: 50px;
-  }
-
-  .service-slogan {
-    font-size: 18px;
-  }
-
-  .service-sub-title {
-    font-size: 24px;
-  }
-
-  .service-smallcard-wrapper>* {
-    flex: 0 0 calc(50% - 12.5px);
+  .service-white {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 /* Tablet (769px – 992px) */
 @media screen and (min-width: 769px) and (max-width: 992px) {
+  .service-section {
+    background: #c30000;
+    color: #fff;
+  }
+
+  .service {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    position: relative;
+  }
+  .service-banner {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 440px;
+    max-width: 90%;
+    margin: 0px auto;
+    height: 400px;
+    z-index: 999;
+  }
+
+  .service-slogan {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Segoe UI", sans-serif;
+  }
+
   .service-title {
-    font-size: 70px;
+    font-weight: 600;
+    font-size: 110px;
+    font-family: "Barlow", sans-serif;
+    line-height: 1;
   }
 
   .service-sub-title {
-    font-size: 28px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Yu Gothic UI", sans-serif;
+  }
+
+  .card-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 0;
+    width: 100%;
+    max-width: 475px;
+    background-color: #a52f2f;
+    border-radius: 30px;
+    position: relative;
   }
 
   .service-card {
-    padding: 30px 40px;
-    width: 100%;
+    width: 600px;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    background: transparent;
   }
 
-  .card-wrapper {
-    width: 100%;
-    max-width: 800px;
+  .service-white {
+    display: flex;
     justify-content: flex-end;
+    position: relative;
   }
 
-  .service-smallcard-wrapper>* {
+  .service-logo {
+    width: 285px;
+    max-width: 100%;
+  }
+
+  .service-button,
+  .service-button-two {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Segoe UI", sans-serif;
+  }
+
+  .service-button {
+    background: #c30000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .service-button-two {
+    background: transparent;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid #fff;
+  }
+
+  .service-card p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .service-smallcard-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .service-smallcard-wrapper > * {
     flex: 0 0 calc(50% - 12.5px);
   }
 
-  .card-wrapper {
-    margin-top: 410px;
+  .service-small-card {
+    background-color: #a52f2f;
+    padding: 0 60px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .service-small-card-img {
+    width: 200px;
+    height: 210px;
+    /* object-fit: cover; */
+  }
+
+  .service-small-card h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .service-small-card p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* Decorative circles */
+  .card-wrapper::after,
+  .card-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 304px;
+    aspect-ratio: 1 / 1;
+    background: url(images/circle-white.svg) no-repeat center / cover;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .card-wrapper::after {
+    top: 305px;
+    left: 300px;
+  }
+
+  .card-wrapper::before {
+    top: 900px;
+    right: 300px;
   }
 }
 
 /* Laptop (993px – 1200px) */
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-  .service-card {
+  /* .service-card {
     width: 500px;
     padding: 30px 50px;
   }
@@ -273,6 +487,170 @@
   .service-banner {
     width: 500px;
     height: 370px;
+  } */
+
+  .service-section {
+    background: #c30000;
+    color: #fff;
+  }
+
+  .service {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    position: relative;
+  }
+  .service-banner {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 500px;
+    max-width: 90%;
+    margin: 0px auto;
+    height: 360px;
+    z-index: 999;
+  }
+
+  .service-slogan {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Segoe UI", sans-serif;
+  }
+
+  .service-title {
+    font-weight: 600;
+    font-size: 110px;
+    font-family: "Barlow", sans-serif;
+    line-height: 1;
+  }
+
+  .service-sub-title {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Yu Gothic UI", sans-serif;
+  }
+
+  .card-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 0;
+    width: 100%;
+    max-width: 475px;
+    background-color: #a52f2f;
+    border-radius: 30px;
+    position: relative;
+    height: 380px;
+  }
+
+  .service-card {
+    width: 600px;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    background: transparent;
+  }
+
+  .service-white {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .service-logo {
+    width: 285px;
+    max-width: 100%;
+  }
+
+  .service-button,
+  .service-button-two {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Segoe UI", sans-serif;
+  }
+
+  .service-button {
+    background: #c30000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .service-button-two {
+    background: transparent;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid #fff;
+  }
+
+  .service-card p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .service-smallcard-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .service-smallcard-wrapper > * {
+    flex: 0 0 calc(50% - 12.5px);
+  }
+
+  .service-small-card {
+    background-color: #a52f2f;
+    padding: 0 60px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .service-small-card-img {
+    width: 200px;
+    height: 210px;
+    /* object-fit: cover; */
+  }
+
+  .service-small-card h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .service-small-card p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* Decorative circles */
+  .card-wrapper::after,
+  .card-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 304px;
+    aspect-ratio: 1 / 1;
+    background: url(images/circle-white.svg) no-repeat center / cover;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .card-wrapper::after {
+    top: 305px;
+    left: 300px;
+  }
+
+  .card-wrapper::before {
+    top: 900px;
+    right: 300px;
   }
 }
 

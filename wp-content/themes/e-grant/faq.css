@@ -6,6 +6,7 @@
   max-width: 1460px;
   flex-wrap: wrap;
   font-family: Yu Gothic UI;
+  justify-content: center;
 }
 
 .card-wrap {
@@ -42,15 +43,18 @@
     margin-top: -90px;
     text-align: center;
   }
+
   .two-cards {
     margin-bottom: 40px;
   }
 }
+
 /* right side */
 .card-text.right {
   left: 250px;
   text-align: center;
 }
+
 @media (min-width: 768px) {
   .card-text.right {
     left: 50%;
@@ -58,12 +62,14 @@
     margin-top: -90px;
     text-align: center;
   }
+
   .text-h2 {
     font-size: 28px;
     white-space: nowrap;
     text-align: center;
   }
 }
+
 .card-text h2 {
   margin: 10px 0;
   font-size: 40px;
@@ -76,7 +82,8 @@
   border-radius: 25px;
   color: white;
   cursor: pointer;
-  width: auto; /* important */
+  width: auto;
+  /* important */
   max-width: 100%;
 }
 
@@ -86,6 +93,7 @@
     flex-direction: column;
     margin: 20px;
   }
+
   .card-text.left {
     /* left: 40px; */
     right: auto;
@@ -107,14 +115,17 @@
     width: 200px;
     font-size: 18px;
   }
+
   .card-wrap {
     width: 100%;
   }
+
   .card-text.left,
   .card-text.right {
     left: 50px;
     right: 50px;
   }
+
   .card-text h2 {
     font-size: 28px;
   }
@@ -124,4 +135,5 @@
   max-width: 1260px;
   margin: 0 auto;
 }
+
 /* faqs css end */
