@@ -17,6 +17,7 @@ Version: 1.2
 /* Reset, Typography, Common Elements */
 @import url('css/header.css');
 /* Header & Navigation */
+@import url('css/nav.css');
 @import url('css/footer.css');
 /* Footer */
 
