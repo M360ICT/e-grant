@@ -1,4 +1,5 @@
 /* Mobile view (max-width: 768px) */
+
 @media (max-width: 768px) {
   .hero-banner .team-list a {
     flex: 1 1 calc(50% - 10px); /* Mobile: 2 items (50%) */
@@ -115,10 +116,10 @@
     font-size: 36px;
   }
 
-  .bg-style-inner-1 {
+  /* .bg-style-inner-1 {
     margin-left: 20px;
     width: 100%;
-  }
+  } */
 
   .interview-img-2 {
     height: 650px;
@@ -130,7 +131,6 @@
 
   .interview-img-right-style h4 {
     margin: 0;
-    margin-top: 90px;
   }
 
   /* .interview-img-right-style .bg-style-inner-1 {
@@ -148,6 +148,7 @@
 
   .interview-img-middle-style .bg-style-inner-1 p {
     font-size: 26px;
+    margin-bottom: -100px;
   }
 }
 
