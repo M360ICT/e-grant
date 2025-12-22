@@ -4,6 +4,11 @@
  */
 
 /* ========== RECRUIT BANNER ========== */
+
+#recruit-banner {
+    overflow: hidden;
+}
+
 .recruit-banner-circle {
   position: relative;
   display: flex;
@@ -105,56 +110,65 @@
     width: 82vw;
   }
 
-  .recruit-banner-circle-wrap {
-    scale: 0.6;
-  }
+    .recruit-banner-circle-wrap {
+        scale: 0.6;
+    }
+
+
 }
 
 /* ========== MOBILE RECRUIT BANNER ========== */
 @media screen and (max-width: 810px) {
-  .recruit-banner {
-    position: relative;
-    top: -50px;
-    left: -13.33vw;
-  }
+    .recruit-banner {
+        position: relative;
+        top: -50px;
+        left: -13.33vw;
+    }
 
-  .recruit-banner img {
-    max-width: initial;
-    width: 106vw;
-  }
+    .recruit-banner img {
+        max-width: initial;
+        width: 106vw;
+    }
 
-  .recruit-banner-circle-wrap {
-    position: relative;
-    top: -100px;
-    left: 20px;
-  }
+    .recruit-banner-circle-wrap {
+        position: relative;
+        top: -100px;
+        left: 20px;
+    }
 
-  .recruit-banner-circle {
-    width: 333px;
-    height: 333px;
-    font-size: 20px;
-  }
+    .recruit-banner-circle {
+        width: 333px;
+        height: 333px;
+        font-size: 20px;
+    }
 
-  .recruit-banner-circle .en {
-    font-size: 60px;
-  }
+    .recruit-banner-circle .en {
+        font-size: 60px;
+    }
 
-  .recruit-banner-circle:after {
-    top: 0;
-    left: 0;
-    width: 333px;
-    border-width: 30px;
-  }
+    .recruit-banner-circle:after {
+        top: 0;
+        left: 0;
+        width: 333px;
+        border-width: 30px;
+    }
 
-  .recruit-banner-circle a {
-    margin-top: 15px;
-    width: 170px;
-    font-size: 15px;
-  }
+    .recruit-banner-circle a {
+        margin-top: 15px;
+        width: 170px;
+        font-size: 15px;
+    }
 
-  .recruit-banner-circle:before {
-    width: 333px;
-    top: 180px;
-    left: 180px;
-  }
+    .recruit-banner-circle:before {
+        width: 333px;
+        top: 180px;
+        left: 180px;
+    }
+}
+
+@media screen and (min-width: 1880px) {
+    #recruit-banner {
+
+        overflow: visible;
+    }
 }
