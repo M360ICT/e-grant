@@ -137,6 +137,11 @@
 .specialist-inner-wrapper h2 span {
   font-size: 77px;
 }
+@media (min-width: 325px) and (max-width: 425px) {
+  .text-style-2 {
+    padding: 0px 30px !important;
+  }
+}
 
 @media (max-width: 768px) {
   .specialist-img {
@@ -171,10 +176,19 @@
   }
 
   .specialist-inner-wrapper {
-    padding: 80px 20px;
+    padding: 80px 30px;
     margin-top: 350px;
     border-radius: 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .specialist-inner-wrapper .btn-entry {
+    margin-top: 30px;
+    padding: 0px 10px;
+    width: 200px;
   }
 
   .specialist-inner-wrapper h2 span {
@@ -187,8 +201,12 @@
   .text-style-3 {
     font-size: 46px;
     margin-left: 115px;
-    margin-top: -525px;
+    margin-top: -545px;
     padding: 0px 20px;
+  }
+  .text-style-2 {
+    font-size: 46px;
+    padding: 0px 60px;
   }
 
   .specialist-inner-wrapper:before {
@@ -198,9 +216,8 @@
     height: 100%;
     background: #c30000;
     border-radius: 188px 188px 0px 0px;
-    margin-top: -230px;
+    margin-top: -260px;
     z-index: -1;
-    margin-left: -20px;
   }
   .specialist-inner-text-style h2 {
     writing-mode: vertical-rl;
@@ -217,14 +234,105 @@
     padding: 20px;
     margin-top: 0px;
   }
-  /* .specialist-inner-text-style h3 {
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .specialist-img {
+    margin-top: 130px;
+  }
+  .text-style-mobile {
+    display: block;
+  }
+  .specialist-inner .col {
+    align-self: center;
+    width: 100%;
+  }
+
+  .specialist-inner {
+    flex-direction: column-reverse;
+  }
+
+  .specialist-inner-text-style h2 {
+    font-size: 69px;
+  }
+
+  .specialist-inner-text-style h3 {
     position: absolute;
-    right: 25px;
-    width: 230px;
+    right: 15px;
+    width: 440px;
     top: 0;
     line-height: 1;
-    font-size: 50px;
-  } */
+    font-size: 129px;
+  }
+  .specialist-img img {
+    margin-left: 0;
+  }
+
+  .specialist-inner-wrapper {
+    padding: 80px 30px;
+    margin-top: 350px;
+    border-radius: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .specialist-inner-wrapper .btn-entry {
+    margin-top: 30px;
+    padding: 0px 10px;
+    width: 230px;
+  }
+
+  .specialist-inner-wrapper h2 span {
+    font-size: 56px;
+  }
+
+  .specialist-inner-wrapper h2 {
+    font-size: 27px;
+  }
+  .text-style-3 {
+    font-size: 76px;
+    margin-left: 135px;
+    margin-top: -525px;
+    top: -200px;
+    padding: 0px 20px;
+  }
+  .text-style-2 {
+    padding: 0px 90px;
+  }
+  .specialist-inner-wrapper p {
+    font-size: 20px;
+    padding: 2px 60px;
+  }
+
+  .specialist-inner-wrapper:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #c30000;
+    border-radius: 400px 400px 0px 0px;
+    margin-top: -460px;
+    z-index: -1;
+  }
+  .specialist-inner-text-style h2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 130px;
+  }
+
+  .specialist-inner-text-style {
+    display: flex;
+  }
+
+  .specialist-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px;
+    margin-top: 0px;
+  }
 }
 @media (min-width: 1024px) {
   .specialist-inner-wrapper h2 span {
@@ -244,7 +352,7 @@
   }
   .specialist-img img {
     width: 400px;
-    margin-left: -212px;
+    margin-left: -172px;
   }
 
   .specialist-inner-section .btn-entry {
@@ -316,6 +424,7 @@
   .specialist-img img {
     width: 550px;
     margin-left: -212px;
+    margin-bottom: 169px;
   }
 
   .specialist-inner-section .btn-entry {
@@ -343,11 +452,13 @@
   .text-style-3 {
     color: #c30001;
     font-family: "Barlow", sans-serif;
-    bottom: 100px;
+    bottom: 186px;
     z-index: 5;
     position: absolute;
-    margin-left: 109px;
-    font-size: 80px;
+    margin-left: 223px;
+    font-size: 100px;
+    font-weight: semi-bold;
+    padding: 0px 30px;
   }
   .specialist-inner-section {
     position: relative;

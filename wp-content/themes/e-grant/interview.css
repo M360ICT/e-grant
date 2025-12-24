@@ -23,10 +23,16 @@
   width: 100%;
   padding: 0 60px;
   align-items: end;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 200px);
   justify-content: space-around;
 }
-
+@media (max-width: 500px) {
+  .interview-img-middle-style .bg-style-inner-1 {
+    height: auto; /* fixed 200px height disable */
+    padding: 0 20px; /* optional: padding adjust */
+    margin-top: 30px;
+  }
+}
 .interview-img-middle-style {
   height: unset;
 }

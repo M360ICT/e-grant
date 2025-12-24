@@ -36,12 +36,35 @@
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .card-text.left {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -90px;
+    text-align: center;
+  }
+  .two-cards {
+    margin-bottom: 40px;
+  }
+}
 /* right side */
 .card-text.right {
   left: 250px;
   text-align: center;
 }
-
+@media (min-width: 768px) {
+  .card-text.right {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -90px;
+    text-align: center;
+  }
+  .text-h2 {
+    font-size: 28px;
+    white-space: nowrap;
+    text-align: center;
+  }
+}
 .card-text h2 {
   margin: 10px 0;
   font-size: 40px;
