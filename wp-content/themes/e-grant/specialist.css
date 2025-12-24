@@ -142,9 +142,11 @@
   .specialist-img {
     margin-top: 130px;
   }
+
   .text-style-mobile {
     display: block;
   }
+
   .specialist-inner .col {
     align-self: center;
     width: 100%;
@@ -166,6 +168,7 @@
     line-height: 1;
     font-size: 59px;
   }
+
   .specialist-img img {
     margin-left: 0;
   }
@@ -184,6 +187,7 @@
   .specialist-inner-wrapper h2 {
     font-size: 27px;
   }
+
   .text-style-3 {
     font-size: 46px;
     margin-left: 115px;
@@ -202,6 +206,7 @@
     z-index: -1;
     margin-left: -20px;
   }
+
   .specialist-inner-text-style h2 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -217,6 +222,7 @@
     padding: 20px;
     margin-top: 0px;
   }
+
   /* .specialist-inner-text-style h3 {
     position: absolute;
     right: 25px;
@@ -226,10 +232,12 @@
     font-size: 50px;
   } */
 }
+
 @media (min-width: 1024px) {
   .specialist-inner-wrapper h2 span {
     font-size: 40px;
   }
+
   .specialist-inner-wrapper {
     background: #c30000;
     color: #fff;
@@ -238,10 +246,12 @@
     padding-right: 185px;
     padding-left: 34px;
   }
+
   .specialist-inner-wrapper p {
     font-size: 14px;
     line-height: 2.2;
   }
+
   .specialist-img img {
     width: 400px;
     margin-left: -212px;
@@ -257,18 +267,21 @@
     background: #fff;
     border-radius: 90vh;
   }
+
   .specialist-inner-text-style h2 {
     font-size: 80px;
     color: #c30000;
     text-align: center;
     margin-right: 100px;
   }
+
   .specialist-inner-text-style h3 {
     font-size: 97px;
     text-align: right;
     width: 200px;
     color: #fff;
   }
+
   .text-style-3 {
     color: #c30001;
     font-family: "Barlow", sans-serif;
@@ -288,19 +301,23 @@
     text-align: right;
   }
 }
+
 .text-style-3 span {
   font-size: 21px;
   display: block;
   line-height: 30px;
 }
+
 .text-style-2 span {
   font-size: 70px;
   line-height: 60px;
 }
+
 @media (min-width: 1440px) {
   .specialist-inner-wrapper h2 span {
     font-size: 40px;
   }
+
   .specialist-inner-wrapper {
     background: #c30000;
     color: #fff;
@@ -309,10 +326,12 @@
     padding-right: 290px;
     padding-left: 160px;
   }
+
   .specialist-inner-wrapper p {
     font-size: 14px;
     line-height: 2.2;
   }
+
   .specialist-img img {
     width: 550px;
     margin-left: -212px;
@@ -328,18 +347,21 @@
     background: #fff;
     border-radius: 90vh;
   }
+
   .specialist-inner-text-style h2 {
     font-size: 110px;
     color: #c30000;
     text-align: right;
     margin-right: 260px;
   }
+
   .specialist-inner-text-style h3 {
     font-size: 117px;
     text-align: right;
     color: #fff;
     width: 300px;
   }
+
   .text-style-3 {
     color: #c30001;
     font-family: "Barlow", sans-serif;
@@ -349,6 +371,7 @@
     margin-left: 109px;
     font-size: 80px;
   }
+
   .specialist-inner-section {
     position: relative;
   }
@@ -363,6 +386,7 @@
     right: 40px;
     position: absolute;
   }
+
   .text-style-3 span {
     font-size: 21px;
     display: block;
@@ -379,31 +403,38 @@
     padding-right: 300px;
     padding-left: 235px;
   }
+
   .specialist-inner-wrapper h2 span {
     font-size: 77px;
   }
+
   .specialist-inner-wrapper p {
     font-size: 20px !important;
   }
+
   .specialist-img img {
     width: 640px;
     height: 712px;
     margin-left: -258px;
     margin-bottom: 157px;
   }
+
   .specialist-inner-text-style h2 {
     font-size: 110px;
     color: #c30000;
     text-align: center;
   }
+
   .specialist-inner-text-style h3 {
     font-size: 145px;
     text-align: right;
     color: #fff;
   }
+
   .specialist-inner-section {
     position: relative;
   }
+
   .text-style-3 {
     color: #c30001;
     font-family: "Barlow", sans-serif;
@@ -413,6 +444,7 @@
     margin-left: 139px;
     font-size: 100px;
   }
+
   .text-style-2 {
     font-size: 110px;
     font-family: "Barlow", sans-serif;
@@ -423,6 +455,7 @@
     right: 40px;
     position: absolute;
   }
+
   .text-style-2 span {
     font-size: 110px;
   }

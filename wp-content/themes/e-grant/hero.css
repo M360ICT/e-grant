@@ -54,6 +54,11 @@
   font-size: 132px;
   line-height: 1.2;
   margin-bottom: 50px;
+
+}
+
+.text-21 {
+  font-weight: bold;
 }
 
 .bg-style-inner-1 p span {
@@ -70,7 +75,9 @@
   font-size: 80px;
   margin-bottom: 50px;
 }
+
 @media screen and (max-width: 768px) {
+
   /* Title container on right */
   .hero-mobile-title {
     writing-mode: vertical-rl;
@@ -92,6 +99,7 @@
     gap: 10px;
     height: 54vh !important;
   }
+
   /* .hero-banner {
     height: 60vh;
   } */
@@ -121,9 +129,11 @@
     padding: 0px 0px;
     height: 180px !important;
   }
+
   .hero-banner {
     margin-top: 0;
   }
+
   .hero-banner .team-list {
     column-gap: 0;
   }
@@ -137,15 +147,18 @@
     padding-left: 10px;
     margin: 10px 0 20px 0px;
   }
+
   .header-style-1 {
     height: auto !important;
   }
 }
+
 @media screen and (min-width: 781px) and (max-width: 1010px) {
   .hero-mobile-title {
     display: none;
   }
 }
+
 @media screen and (min-width: 1010px) {
   .hero-mobile-title {
     display: none;
