@@ -33,7 +33,7 @@
 .jp-wrapper {
   display: flex;
   align-items: flex-start;
-  gap: 30px; /* left & right distance */
+  gap: 5px; /* left & right distance */
 }
 
 .new-section {
@@ -47,6 +47,10 @@
   line-height: 1.2;
   font-size: 32px;
   color: #fff;
+}
+
+.message-container2 {
+  margin-top: 0px;
 }
 
 .career-subtitle2 {
@@ -138,7 +142,7 @@
   }
   .new-section {
     flex-direction: column; /* ✅ stack */
-    gap: 6px;
+    gap: 90px;
   }
 }
 .jp-text {
@@ -643,6 +647,9 @@
     width: 250px;
     height: 250px;
     padding: 20px;
+  }
+  .message-container2 {
+    margin-top: 0px;
   }
   .main-title {
     font-size: 36px;
