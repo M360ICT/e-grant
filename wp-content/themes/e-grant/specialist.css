@@ -38,6 +38,7 @@
 
 .specialist-inner-wrapper h2 {
   font-size: 38px;
+  font-weight: 400;
 }
 
 .specialist-inner-text-style h2 {
@@ -79,7 +80,7 @@
 
 .specialist-inner-section .btn-entry {
   display: inline-block;
-  width: 140px;
+  width: 240px;
   font-size: 22px;
   line-height: 54px;
   text-align: center;
@@ -202,6 +203,7 @@
 
   .specialist-inner-wrapper h2 {
     font-size: 27px;
+    align-self: flex-start;
   }
 
   .text-style-3 {
@@ -378,7 +380,7 @@
 
   .specialist-inner-section .btn-entry {
     display: inline-block;
-    width: 120px;
+    width: 240px;
     font-size: 16px;
     line-height: 54px;
     text-align: center;
@@ -432,6 +434,12 @@
   line-height: 60px;
 }
 
+.specialist-inner-text-style .desktop-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 @media (min-width: 1440px) {
   .specialist-inner-wrapper h2 span {
     font-size: 40px;
@@ -459,7 +467,7 @@
 
   .specialist-inner-section .btn-entry {
     display: inline-block;
-    width: 120px;
+    width: 240px;
     font-size: 16px;
     line-height: 54px;
     text-align: center;
@@ -545,6 +553,7 @@
     font-size: 110px;
     color: #c30000;
     text-align: center;
+    margin-right: 0;
   }
 
   .specialist-inner-text-style h3 {
