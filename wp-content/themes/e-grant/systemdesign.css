@@ -10,7 +10,7 @@
   background: white;
   z-index: 4;
   position: relative;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 /* emon */
@@ -105,6 +105,9 @@
     border-radius: 50%;
     margin-top: 6px;
   }
+  .best-section {
+    margin-top: 110px;
+  }
 }
 .footer-title {
   width: 1072px;
@@ -120,9 +123,9 @@
 }
 .system-title {
   text-align: center;
-  font-size: 110px;
+  font-size: 100px;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
   color: #c30000;
   letter-spacing: 2px;
@@ -203,9 +206,9 @@
   /* emon */
   .system-title {
     font-size: 30px;
-    margin-top: -114px;
+    margin-top: -100px;
     margin-bottom: 10px;
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
   }
 
@@ -217,7 +220,6 @@
 /* emon */
 @media (max-width: 325px) {
   .system-title {
-    display: none;
     /* Hide on very small screens */
     font-size: 20px;
     font-weight: 15px;
@@ -244,7 +246,7 @@
   }
 
   .footer-title {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 /* system design end */
