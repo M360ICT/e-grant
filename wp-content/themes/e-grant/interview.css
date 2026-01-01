@@ -1,5 +1,5 @@
 .interview-img-right-style .bg-style-inner-1 {
-  margin-right: auto;
+  margin-right: 600px;
 }
 
 .interview-img-right-style .bg-style-inner-1 p span {
@@ -23,25 +23,112 @@
   width: 100%;
   padding: 0 60px;
   align-items: end;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 100px);
   justify-content: space-around;
+  justify-items: flex-end;
 }
-@media (max-width: 500px) {
-  .interview-img-middle-style .bg-style-inner-1 {
-    height: auto; /* fixed 200px height disable */
-    padding: 0 20px; /* optional: padding adjust */
-    margin-top: 30px;
-  }
+
+.new-section {
+  display: flex;
+  justify-self: end;
+  align-items: end;
 }
-.interview-img-middle-style {
-  height: unset;
+
+.jp-wrapper {
+  display: flex;
+  justify-self: end;
+
+  align-items: end !important;
+}
+
+.jp-text {
+  padding-top: 130px;
+  font-weight: bold;
+}
+
+.interview-img-2 .bg-style-inner-1 p {
+  font-weight: bold;
+}
+
+.br-small {
+  display: none;
 }
 
 .interview-img-middle-style .bg-style-inner-1 p {
   font-size: 61px;
+  font-weight: bold;
+}
+
+.new-24 {
+  display: inline;
+}
+
+.new-24 h4 {
+  font-weight: 400;
 }
 
 .interview-img-middle-style .bg-style-inner-1 p span {
   font-size: 122px;
   font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  .interview-img-middle-style .bg-style-inner-1 {
+    display: flex;
+    width: 100%;
+    padding: 0 14px;
+    height: 72vh;
+  }
+
+  .interview-img-right-style .bg-style-inner-1 {
+    margin-right: 600px;
+    width: 100% !important;
+    padding-top: 210px !important;
+  }
+
+  .br-small {
+    display: inline;
+  }
+
+  .interview-img-left-style .bg-style-inner-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
+  }
+
+  .new-section {
+    display: flex;
+    gap: 60px;
+  }
+
+  .jp-wrapper {
+    display: flex;
+    justify-self: center;
+    margin-bottom: auto;
+    align-items: start !important;
+  }
+
+  .jp-text {
+    padding-top: 10px;
+    font-size: 40px !important;
+    font-weight: bold;
+  }
+
+  .jp-content p {
+    font-size: 28px !important;
+    font-weight: bold !important;
+  }
+
+  .jp-content span {
+    font-size: 56px !important;
+    font-weight: bold !important;
+  }
+
+  .interview-img-2 .bg-style-inner-1 p {
+    font-weight: bold;
+  }
+
+  .year {
+    font-size: 16px !important;
+  }
 }
