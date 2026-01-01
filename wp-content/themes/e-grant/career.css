@@ -1,10 +1,11 @@
 /* Section setup */
+
 .career-section {
   position: relative;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+
   margin-top: 200px;
   margin-bottom: 10px;
 }
@@ -38,6 +39,7 @@
 
 .new-section {
   display: flex;
+  margin-top: -40px;
 }
 
 .jp-text {
@@ -67,6 +69,7 @@
 .career-box {
   background: #c30000;
   border-radius: 30px;
+
   padding: 30px;
   display: flex;
   gap: 30px;
@@ -76,7 +79,7 @@
 /* Side box */
 .side-box {
   width: 200px;
-  min-height: 350px;
+  min-height: 450px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   display: flex;
@@ -132,6 +135,31 @@
   opacity: 1px;
   border-width: 2.5px;
 }
+.flow-main-arrow1 {
+  position: absolute;
+  left: 145px;
+  font-size: 22px;
+  color: #fff;
+  margin-top: 8px;
+  font-weight: bold;
+  width: 40px;
+  opacity: 1px;
+  border-width: 2.5px;
+  transform: rotate(90deg);
+}
+.flow-main-arrow2 {
+  margin-bottom: -20px;
+  position: absolute;
+  left: -10px;
+  font-size: 22px;
+  color: #fff;
+  margin-top: 90px;
+  font-weight: bold;
+  width: 50px;
+  opacity: 1px;
+  border-width: 2.5px;
+  margin-bottom: -10px;
+}
 @media (max-width: 728px) {
   flow-main-arrow {
     margin-left: 130px;
@@ -154,39 +182,55 @@
   display: flex;
 }
 .flow-main-arrow2 {
+  margin-bottom: -20px;
   position: absolute;
   left: -10px;
   font-size: 22px;
   color: #fff;
-  margin-top: 8px;
+
   font-weight: bold;
   width: 50px;
   opacity: 1px;
   border-width: 2.5px;
+  margin-bottom: -10px;
 }
 .flow-main-arrow:nth-of-type(1) {
   top: 80px;
 }
-.flow-main-arrow2 {
-  bottom: 75px;
-}
+
 /* Flow box */
 .flow-box {
   background: rgba(255, 255, 255, 0.15);
   background-color: #a52f2e;
+
+  max-width: 790px; /* Desktop limit */
+  width: 100%; /* Mobile friendly */
+
+  min-height: 188px; /* Figma minimum height */
+  height: auto; /* Content অনুযায়ী grow */
+
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
   gap: 4px;
 }
+
 .flow-box2 {
   background: rgba(255, 255, 255, 0.15);
   background-color: #772828;
+
+  max-width: 790px; /* Figma desktop width */
+  width: 100%; /* responsive */
+
+  min-height: 188px; /* Figma height */
+  height: auto; /* content grow */
+
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
   gap: 4px;
 }
+
 /* Flow title */
 .flow-title {
   font-size: 14px;
@@ -216,21 +260,22 @@
 .flow-row {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 /* Steps */
 .flow-item {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 20px 30px;
+  padding: 10px 10px;
   border-radius: 12px;
   font-size: 13px;
   color: #fff;
   white-space: nowrap;
   width: 207px;
   height: 78px;
+
   opacity: 1;
-  top: 10120px;
+
   left: -6060px;
   border-width: 2px;
 }
@@ -278,8 +323,8 @@
 /* emon */
 .career-my-circle2 {
   position: absolute;
-  left: 100px;
-  top: -280px;
+  left: 30px;
+  top: -200px;
   width: 596px;
   height: 596px;
   opacity: 1;
@@ -292,15 +337,6 @@
 }
 /* Left side - Image with circular frame */
 
-.image-section {
-  position: relative;
-  flex-shrink: 0;
-  .image-section {
-    position: relative;
-    flex-shrink: 0;
-    transform: translateX(-200px);
-  }
-}
 @media (min-width: 1440px) {
   .image-section {
     margin-left: -200px;
@@ -328,6 +364,7 @@
 .image-section2 {
   position: relative;
   flex-shrink: 0;
+  z-index: 2;
 }
 .circle-frame {
   position: relative;
@@ -339,6 +376,7 @@
   padding: clamp(20px, 3vw, 30px);
   box-shadow: 0 20px 60px rgba(196, 18, 48, 0.3);
   transition: transform 0.3s ease;
+  z-index: -1;
 }
 .circle-frame2 {
   width: 300px;
@@ -346,6 +384,7 @@
   background: linear-gradient(135deg, #c41230 0%, #8b0000 100%);
   padding: 30px;
   box-shadow: 0 20px 60px rgba(196, 18, 48, 0.3);
+  z-index: -2;
 }
 .image-circle {
   width: 100%;
@@ -392,13 +431,15 @@
   gap: 5px;
 }
 .subtitle {
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 10px;
   color: #323232;
   letter-spacing: 1px;
-  margin-left: -300px;
+  margin-left: -290px;
   font-weight: 400;
   font: normal normal bold 30px/112px Noto Sans JP;
+
+  margin-top: 70px;
 }
 .subtitle2 {
   font-size: 14px;
@@ -415,8 +456,8 @@
   line-height: 1;
   width: 476px;
   height: 132px;
-  margin-left: -120px;
-  margin-bottom: 20px;
+  margin-left: -150px;
+  margin-bottom: 22px;
   opacity: 1;
 }
 .main-title1 {
@@ -469,7 +510,7 @@
   background: linear-gradient(135deg, #c41230 0%, #a01028 100%);
   color: white;
   border: none;
-  border-radius: 30px;
+  border-radius: 27px;
   padding: 16px 40px;
   font-size: 15px;
   font-weight: 600;
@@ -478,8 +519,8 @@
   transition: all 0.3s ease;
   width: 240px;
   height: 54px;
-  margin-top: 50px;
-  margin-left: -60px;
+  margin-top: 40px;
+  margin-left: -70px;
   opacity: 1;
   letter-spacing: 1px;
 }
@@ -517,9 +558,18 @@
   display: block;
   margin-left: 300px;
   margin-top: 440px;
-  width: 700px;
-  height: 519px;
+  width: 620px;
+  height: 450px;
 }
+
+/* .flow-main-arrow2 {
+  font-size: 22px;
+  color: #fff;
+  margin-left: 10px;
+
+  transform-origin: center;
+} */
+
 @media (max-width: 1455px) {
   .message-logo {
     width: 400px;
@@ -599,10 +649,10 @@
 @media (max-width: 1192px) {
   .career-my-circle2 {
     position: absolute;
-    left: 300px;
+    left: -100px;
     top: -320px;
-    width: 596px;
-    height: 596px;
+    width: 580px;
+    height: 580px;
     opacity: 1;
     border: 40px solid #e3e3e3;
     box-sizing: border-box;
@@ -654,6 +704,13 @@
     margin-left: 24px;
   }
 }
+
+@media (min-width: 501px) and (max-width: 1024px) {
+  .side-box {
+    width: 180px;
+    min-height: 580px; /* tablet */
+  }
+}
 /* Responsive */
 @media (max-width: 768px) {
   .career-title {
@@ -687,21 +744,21 @@
   }
   /* Make children visible */
   .flow-main-arrow {
-    margin-top: -100px;
+    margin-top: -94px;
     font-size: 22px;
     color: #fff;
-    margin-left: 330px;
+    margin-left: 250px;
     /* Rotate 90 degrees */
     transform: rotate(90deg);
     /* Optional: adjust origin if needed */
     transform-origin: center;
   }
   .flow-main-arrow2 {
-    margin-bottom: 300px;
-
+    margin-bottom: 335px;
+    margin-top: 0;
     font-size: 22px;
     color: #fff;
-    margin-left: 330px;
+    margin-left: 250px;
     /* Rotate 90 degrees */
     transform: rotate(90deg);
     /* Optional: adjust origin if needed */
@@ -720,25 +777,87 @@
     align-self: center;
   }
 }
+.small-device {
+  display: none; /* hidden by default */
+}
+.lg-device {
+  display: block; /* desktop/md/lg-এ visible */
+}
 @media (max-width: 500px) {
   .flow-main-arrow {
     margin-top: -100px;
-    margin-left: 130px;
+    margin-left: 140px;
     font-size: 22px;
     color: #fff;
 
     transform: rotate(90deg);
     transform-origin: center;
   }
+  .flow-main-arrow1 {
+    margin-left: 20px;
+  }
+  .career-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .small-device {
+    display: block; /* বা flex, inline-block, যেটা লাগে */
+  }
+  .lg-device {
+    display: none;
+  }
+  .flow-row {
+    gap: 10px;
+    margin-top: 50px;
+  }
+  .side-box1 {
+    background: #772828;
+  }
+  .career-box {
+    border-radius: 0;
+    padding: 0; /* remove radius */
+  }
+  .flow-item {
+    margin-top: -10px;
+  }
+  .flow-box {
+    margin-bottom: 0;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.15);
+    background-color: #c30000;
+    margin-top: -50px;
+  }
+  .side-box {
+  }
   .flow-main-arrow2 {
-    margin-bottom: 300px;
+    margin-bottom: 225px;
     font-size: 22px;
     color: #fff;
-    margin-left: 130px;
+    margin-left: 160px;
+    margin-top: 0;
     /* Rotate 90 degrees */
     transform: rotate(90deg);
     /* Optional: adjust origin if needed */
     transform-origin: center;
+  }
+  .flow-box2 {
+    background: rgba(255, 255, 255, 0.15);
+    background-color: #772828;
+
+    max-width: 790px; /* Desktop (Figma) */
+    width: 100%;
+
+    min-height: 188px;
+    height: auto;
+    margin-bottom: 0;
+    gap: 4px;
+  }
+
+  .flow-box2 {
+    max-width: 100%; /* full screen */
+    width: 100%;
+    min-height: auto; /* content অনুযায়ী height */
+    border-radius: 0; /* optional: mobile friendly */
   }
 }
 /* Extra small devices */

@@ -2,6 +2,7 @@
 /* emon */
 .system-designs {
   max-width: 1200px;
+  min-height: 667px;
   font-family: Yu Gothic UI;
   margin: 80px auto;
   border-radius: 20px;
@@ -32,6 +33,17 @@
   max-width: 1200px;
   display: flex;
   margin-top: 80px;
+}
+.footer-title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #c30000;
+  letter-spacing: 2px;
+  font-family: Barlow;
+  display: block;
 }
 /* emon */
 .left-label {
@@ -95,8 +107,9 @@
   }
 }
 .footer-title {
+  width: 1072px;
   text-align: center;
-  font-size: 110px;
+  font-size: 100px;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;

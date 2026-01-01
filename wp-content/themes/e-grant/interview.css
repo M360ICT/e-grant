@@ -23,7 +23,7 @@
   width: 100%;
   padding: 0 60px;
   align-items: end;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 90px);
   justify-content: space-around;
 }
 @media (max-width: 500px) {
