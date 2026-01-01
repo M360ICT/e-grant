@@ -1,6 +1,7 @@
 /* Mobile view (max-width: 768px) */
 
 @media (max-width: 768px) {
+
   /* .hero-banner .team-list a {
     flex: 1 1 calc(50% - 10px); 
     padding: 10px 15px;
@@ -116,5 +117,11 @@
 
   .mobile-img {
     display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .interview-img-middle-style {
+    height: auto;
   }
 }

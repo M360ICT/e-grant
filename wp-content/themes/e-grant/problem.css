@@ -182,11 +182,10 @@
   right: 30px;
   width: 220px;
   aspect-ratio: 1 / 1;
-  background: url(/wp-content/themes/e-grant/images/home/problem-bg.png)
-    no-repeat center / cover;
+  background: url(/wp-content/themes/e-grant/images/home/problem-bg.png) no-repeat center / cover;
   opacity: 0.95;
   pointer-events: none;
-  z-index: 9;
+  /* z-index: 9; */
 }
 
 .content-wrapper {
@@ -194,7 +193,7 @@
   flex-direction: column;
   gap: 24px;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   font-family: "Gothic UI";
   padding: 0 0px;
 }
@@ -245,14 +244,14 @@
   .problem-section {
     padding: 80px 32px;
   }
+
   .problem-section::after {
     top: 30px;
     right: 420px;
     width: 220px;
     opacity: 0.9;
-    z-index: 60;
-    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png)
-      no-repeat center / cover;
+    /* z-index: 60; */
+    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png) no-repeat center / cover;
   }
 
   .content-wrapper {
@@ -298,9 +297,8 @@
     right: 420px;
     width: 220px;
     opacity: 0.9;
-    z-index: 50;
-    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png)
-      no-repeat center / cover;
+    /* z-index: 50; */
+    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png) no-repeat center / cover;
   }
 
   .content-wrapper {
@@ -350,10 +348,9 @@
     top: 60px;
     right: 490px;
     width: 370px;
-    z-index: 10;
+    /* z-index: 10; */
     padding-top: 200px !important;
-    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png)
-      no-repeat center / cover;
+    background: url(/wp-content/themes/e-grant/images/home/problem-bg.png) no-repeat center / cover;
   }
 
   .image-wrapper img {
@@ -364,6 +361,7 @@
     font-size: 60px;
     z-index: 999 !important;
   }
+
   .text-wrapper {
     z-index: 999;
     width: 60%;

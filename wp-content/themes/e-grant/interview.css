@@ -61,10 +61,16 @@
 
 .new-24 {
   display: inline;
+  margin-left: 110px;
 }
 
 .new-24 h4 {
   font-weight: 400;
+
+}
+
+.jp-content p span {
+  font-size: 61px;
 }
 
 .interview-img-middle-style .bg-style-inner-1 p span {
