@@ -125,3 +125,10 @@
     height: auto;
   }
 }
+
+@media (max-width: 375px) {
+  .interview-img-middle-style {
+    padding-bottom: 0;
+    padding-top: 50px;
+  }
+}
