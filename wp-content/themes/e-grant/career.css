@@ -26,10 +26,11 @@
 
 /* Title */
 .career-subtitle {
-  font-size: 14px;
+  font-size: 20px;
   margin-left: 10px;
   position: relative;
   z-index: 2;
+  color: #323232;
 }
 
 .jp-wrapper {
